@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="hr"> 
+<head>
+<meta charset="utf-8" />
+
+	<title>Mislav Piskać - Web dizajner | Web developer</title>
+    
+<meta name="author" content="Mislav Piskać" />   
+<meta name="robots" content="index, follow">
+<meta name="description" content="Web design | Graphic design | Web developer | Flash animation | jQuery | ASP  - Mislav Piskać" />
+<meta name="keywords" content="izrada, stranica, web, dizajn, logo, Mislav, Piskać, izrada web stranica, web dizajn, programiranje, flash, ASP.NET" />
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+
+<link href="css/MainCss.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/MobileDeviceCss.css" rel="stylesheet" type="text/css" media="screen and (max-device-width: 720px)" />
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="favicon.ico" rel="icon" type="image/x-icon" />
+
+<script src="javascript/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="javascript/SpryValidationTextarea.js" type="text/javascript"></script>
+
+</head>
+<body>
+	<div id="wraper"><!--Begin wraper-->
+    <header role="banner"><!--Begin header-->
+        <hgroup itemscope itemtype="http://schema.org/Person">
+    		<h1 itemprop="name"> Mislav <br /> &nbsp; &nbsp; Piskać</h1>
+            <h2 itemprop="jobTitle"> Web dizajner &amp; programer</h2>
+        </hgroup>
+    </header><!--End header-->
+    <article role="main"><!--Begin article-->
+        	<section class="ArticleHeader">
+    			<h3>Kontakt za izradu web stranice</h3>
+            	<span> <a href="index.html">Naslovna</a> > <a href="Contact.html">Narudžba web stranice</a></span>
+            </section>
+				<form action="eposta/e-posta.php" method="post" role="form">
+                
+            <input type="hidden" name="primatelj" value="piskac.web@gmail.com" />
+            <input type="hidden" name="naslov" value="Kontakt s web-stranice" />
+            <input type="hidden" name="preusmjeri" value="../Contact.html" />
+            
+            	<div id="FullnameForm">
+            		<label for="fullname">Ime i prezime: </label>
+            		<input title="Ime i prezime!" type="text" name="fullname" id="fullname" placeholder="enter your full name" autofocus />
+            		<span class="RequiredMsg">Obavezno polje!</span>
+                </div>
+                <div id="EmailForm">
+       			  <label for="email">Email adresa: </label>
+                    <input title="Email!" type="email" name="email" id="email" placeholder="enter your e-mail address" />
+                    <span class="InvalidFormatMsg">Netočan format email adrese!</span><span class="RequiredMsg">Obavezno polje!</span>
+                </div>
+                <div id="PhoneForm">
+				  <label for="phone">Broj telefona: </label>
+                  <input title="Broj telefona!" type="text" name="phone" id="phone" placeholder="enter your phone number" />
+                </div>
+                <div id="CommentsForm">
+                  <label for="comments">Poruka: </label>
+                  <textarea title="Poruka!" name="comments" id="comments" cols="30" rows="4" placeholder="your text message"></textarea>
+                  <span class="textareaRequiredMsg">Obavezno polje!</span> <span class="textareaMinCharsMsg">Poruka mora sadržavat minimalno 10 zankova!</span>
+                </div>              
+                
+				<div>  
+				  <input type="submit" name="btnSubmit" id="btnSubmit" value="Pošalji!" />
+                  <input type="reset" name="btnClear" id="btnClear" value="Poništi!" />
+                </div>           	
+                       
+           	  </form>         	
+    </article><!--End article-->
+    <footer role="contentinfo"><!--Brgin footer-->
+    	<section>
+    			<span><a href="Contact.html">Narudžba web stranice</a> <br /> <a href="izradaStranice.html">Izrada web stranice</a><br /> <a href="galerija.html">Galerija web stranica</a></span>    
+    	</section> 
+    	<section>
+    			<span><a href="#">HTML 5</a> | <a href="#">CSS3</a> | <a href="#">jQuery</a> | <a href="#">SEO</a> | <br /> <a href="#">ASP.NET</a> | <a href="#">AJAX</a> | <a href="#">WP</a></span>
+   		</section>
+    	<section>
+		  		<span><a href="https://www.facebook.com/mislav.piskac" target="_blank" title="Facebook">Facebook stranica</a></span>
+        </section> 
+        <span>Design &amp; developed by Mislav Piskać &copy; 2013</span>  
+    </footer><!--End footer--> 
+	</div><!--End wraper-->
+    
+<script type="text/javascript">
+var FullnameForm = new Spry.Widget.ValidationTextField("FullnameForm");
+var EmailForm = new Spry.Widget.ValidationTextField("EmailForm", "email");
+var CommentsForm = new Spry.Widget.ValidationTextarea("CommentsForm", {minChars:10});
+</script>
+
+</body>
+</html>
