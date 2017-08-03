@@ -1,0 +1,432 @@
+@charset "utf-8";
+
+*{ margin: 0; padding: 0; border: 0; list-style: none; }
+hr.clear {clear: both; }
+body { background-color: #F5F5F5; }
+a { text-decoration: none; outline: none; }
+#wraper{
+	width: 980px;
+	height: auto;
+	margin: 10px auto;
+	font-size: 16px; }
+/*********************************************
+----------------header------------------------
+*********************************************/
+header{
+	width: 100%;
+	height: auto;
+}
+header hgroup {
+	position: relative;
+	height: 220px;
+	width: 100%;
+}
+header hgroup > h1 {
+	float: left;
+	margin: 30px 0 0 0;
+	font-size: 4em;
+	text-align: center;
+	text-shadow: -3px 3px 3px #FFF,
+				 -4px 4px 1px #999;
+}
+header hgroup > h2 {
+	position: absolute;
+	top: 77px;
+	right: 25px;
+	font: normal 3em Verdana, Geneva, sans-serif;
+	text-shadow: 3px 3px 3px #FFF,
+				 4px 4px 1px #999;
+}
+/*********************************************
+----------------navigation--------------------
+*********************************************/
+nav {
+	margin-top: 10px;
+	width: 100%;
+}
+nav ul {
+	width: 98%;
+	height: 100px;
+	margin: 0 10px;
+}
+nav ul li {
+	width: 49.46%;
+	height: 100px;
+	float: left;
+}
+nav ul li:first-of-type {background: url(../Images/FigleftBg.png) 7px 14px no-repeat;}
+nav ul li:last-of-type {background: url(../Images/FigrightBg.png) 355px 14px no-repeat; margin-left: 1.042%;}
+nav ul li a {
+	display: block;
+	height: 85px;
+	color: #C30;
+	text-align: center;
+	font: 900 1.8em/35px  "Times New Roman", Times, serif;
+}
+nav ul li:first-child a{padding: 15px 0 0 100px; box-shadow: 2px 5px 5px #CCC;}
+nav ul li:last-child a{padding: 15px 100px 0 0; box-shadow: -2px 5px 5px #CCC;}
+nav ul li:first-child a:hover{box-shadow: 2px 5px 5px #999;}
+nav ul li:last-child a:hover{box-shadow: -2px 5px 5px #999;}
+nav ul li:first-child a:active{box-shadow: 1px 1px 5px #CCC inset;}
+nav ul li:last-child a:active{box-shadow: -1px 1px 5px #CCC inset;}
+/*********************************************
+----------------article-----------------------
+*********************************************/
+article{
+	position: relative;
+	height: auto;
+	width: 100%;
+}
+section#SectionPage{
+	width: 97.96%;
+	margin: 0 0 0 1.021%;
+	display: -webkit-flex;/* Safari */
+	display: flex;
+}
+article section#SectionPage div {
+	height: auto;
+	margin-right: 1.042%;
+	box-shadow: 0 5px 5px #999;
+	/*width: 24.22%;*/
+	/*float: left;*/
+	-webkit-flex: 1;  /* Safari 6.1+ */
+    -ms-flex: 1;  /* IE 10 */
+	flex: 1;
+}
+article section#SectionPage div:last-of-type {
+	margin: 0!important;
+}
+section#SectionPage div h2 {
+	display: block;
+	text-align: center;
+	color: #C30;
+	font-size: 2.5em;
+}
+section#SectionPage div p {
+	margin: 20px 5px 0 10px;
+	display: block;
+	height: 210px;
+	font: normal 100 1em/1.4em "Times New Roman", Times, serif;
+}
+section#SectionPage div span {
+	display: block;
+	width: 200px;
+	margin: 20px 0 15px 15px;
+	text-align: right;
+}
+section#SectionPage div span a {
+	color: #C30;
+}
+section#SectionPage div span a:hover{
+	color: #800;
+}
+section#MobileSection {
+	background: url(../Images/MobileImageSmall.jpg) left center no-repeat;
+	height: 356px;
+	width: 97.96%;
+	margin: 35px auto 10px auto;
+}
+section#MobileSection div{
+	height: 100%;
+	width: 36.46%;
+	float: right;
+}
+section#MobileSection div h3 {
+	margin: 25px 0 15px 0;
+	font: 900 2em/1.2em Georgia, "Times New Roman", Times, serif;
+	color: #F00;
+	text-align: center;
+}
+section#MobileSection div p {
+	font: normal 1em/1.5em Georgia, "Times New Roman", Times, serif;
+	text-align: center;
+}
+section#MobileSection div p span{
+	display: block;
+	margin: 0 0 15px 0;
+	color: #F00;
+	font-weight: 600;
+}
+/*********************************************
+----------OtherPage-ArticleHeader------------
+*********************************************/
+article .ArticleHeader {
+	height: 3em;
+	margin: 15px auto 0 auto; 
+	padding: 0 0 .5em 0;
+	background: url(../Images/linearGradient.png) center bottom no-repeat;
+}
+article .ArticleHeader h3 {
+	font: normal 1.5em Verdana, Geneva, sans-serif;
+	float: left;
+	width: 70%;
+	color: #C30;
+	margin: 0 0 0 30px;
+}
+.ArticleHeader > span {
+	font: normal .8em Verdana, Geneva, sans-serif;
+	width: 30%;
+	color: #C30;
+	float: right;
+	text-align: right;
+	margin: 0 30px 0 0;
+}
+.ArticleHeader span a {
+	color: #C30;
+}
+.ArticleHeader span a:hover {
+	color: #800;
+}
+/*********************************************
+----------------construction page-------------
+*********************************************/
+article #ArticlePageTxT {
+	width: 74.49%;
+	height: auto;
+	margin: 30px 0 0 0;
+}
+article #ArticlePageTxT h2 {
+	display: block;
+	margin-left: 55px;
+	color: #C30;
+	font-size: 2em;
+	text-align: left;
+}
+article #ArticlePageTxT p {
+	padding: 5px;
+	margin: 0 0 15px 25px;
+	font: normal 100 1em/1.4em "Times New Roman", Times, serif;
+}
+article #ArticlePageTxT p a {
+	color: #C30;
+}
+article #navSection {
+	position: absolute;
+	top: 150px;
+	right: 20px;
+	width: 15.307%;
+}
+article #navSection li {
+	font-size: 80%;
+	border-bottom: 1px dotted #B2BCC6;
+	margin-bottom: 0.6em;
+}
+article #navSection li a {
+	display: block;
+	text-align: right;
+	margin-right: 10px;
+	color: #C30;
+	transition: padding-right .2s linear 0s;
+}
+article #navSection li a:hover {
+	color: #800;
+	padding-right: 10px;
+}
+/*********************************************
+----------------contact page------------------
+*********************************************/
+form {
+	margin: 30px 0 10px 30px;
+}
+input[title], textarea {
+	width: 31.58%;
+	font: normal 100 .8em/1.4em Tahoma, Geneva, sans-serif;
+	color: #00008B;
+	border: 1px inset #00008B;
+	border-radius: 5px;	
+	padding: 6px 5px;
+	transition: box-shadow .3s ease-in 0s, border .3s linear 0s;
+	-webkit-transition: box-shadow .3s ease-in 0s, border .3s linear 0s;
+}
+input[title]:focus, textarea:focus {	
+	border: 1px solid  rgba(0, 53, 199, .7);
+	box-shadow: 0 0 4px rgba(0, 53, 199, .7);
+	background-color: #FFF;
+	outline: none;
+}
+input[type="submit"], input[type="reset"]{
+	margin: 25px 10px 0 0;
+	padding: 5px 5px;
+	color: #000;
+	font-weight: bold;
+	border: 1px outset #ADD8E6;
+	cursor: pointer;
+}
+input[type="submit"]:focus, input[type="reset"]:focus {
+	outline: none;
+}
+input[type="submit"]:active, input[type="reset"]:active {
+	border: 1px inset #ADD8E6;
+}
+form div{
+	clear: left;
+	margin: 0;
+	padding: 6px 0 0 0;
+}
+textarea{
+	margin: 15px 0 0 0;
+}
+form div label{
+	float: left;
+	width: 20%;
+	font: bold 0.9em Verdana, Geneva, sans-serif;
+}
+.RequiredMsg,
+.InvalidFormatMsg,
+.textareaRequiredMsg,
+.textareaMinCharsMsg{
+	display: none;
+}
+.textfieldRequiredState .RequiredMsg,
+.textfieldInvalidFormatState .InvalidFormatMsg,
+.textareaRequiredState .textareaRequiredMsg,
+.textareaMinCharsState .textareaMinCharsMsg{
+	display: inline;
+	color: #CC3333;
+	margin-left: 20px;
+	font-weight: bold;
+}
+input.textfieldRequiredState, .textfieldRequiredState input,
+input.textfieldInvalidFormatState, .textfieldInvalidFormatState input,
+textarea.textareaRequiredState, .textareaRequiredState textarea, 
+textarea.textareaMinCharsState, .textareaMinCharsState textarea{
+	background-color: #FF9F9F;
+}
+/*********************************************
+----------------Gallery-----------------------
+*********************************************/
+#site_content {
+	width: 940px;
+  	padding: 15px 0;
+	margin: 50px auto;
+	overflow: hidden;
+	background-color: #FFF;
+	box-shadow: 0 0 5px #999;
+}
+ul#images {
+	margin: 0 auto;
+	position: relative;
+}
+ul#images li {
+	float: left;
+	width: 150px;
+	height: 300px;
+	display: block;
+	overflow: hidden;
+	list-style-type: none;
+}
+section#gallerySection {
+	position: relative;
+	width: 940px;
+	margin: 0 auto 10px auto;
+	display: block;
+}
+#gallerySection::before, #gallerySection::after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	box-shadow: 0 0 15px #CCC;
+	top: 10px;
+	bottom: 50%;
+	left: 10px;
+	right: 10px;
+}
+#gallerySection ul {
+	list-style: none;
+}
+#gallerySection ul li {
+	float: left;
+	width: 178px;
+	height: 120px;
+	margin: 50px 10px 0 0;
+	padding: 1px;
+	box-shadow: 0 0 5px #333;
+	cursor: pointer;
+	transition: all .5s linear;
+	overflow: hidden;
+}
+#gallerySection ul li:hover {
+	box-shadow: none;
+}
+#gallerySection ul li:first-of-type {
+	background: url(../Images/ImageGallery/ImageGalleryHome.jpg) center 10px no-repeat;
+	width: 920px;
+	height: 430px;
+	margin: 0 auto;
+	padding: 10px;
+	box-shadow: none;
+	cursor: auto;
+}
+#gallerySection ul li:last-of-type {
+	margin-right: 0!important;
+}
+#gallerySection ul li span > img {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	visibility: hidden;
+	transform-origin: 50% 50%;
+	transform: rotateX(90deg) perspective(1200px);
+	opacity: 0;
+	transition: all 1s linear 0s;
+}
+#gallerySection ul li:hover span > img {
+	visibility: visible;
+	opacity: 1;
+	transform: rotate(0);
+	z-index: 100;
+}
+/*********************************************
+----------------footer------------------------
+*********************************************/
+footer {
+	width: 100%;
+	display: -webkit-flex;/* Safari */
+	display: flex;
+	-webkit-flex-wrap: wrap; /* Safari 6.1+ */
+	flex-wrap: wrap;
+}
+footer > section {
+	/*float: left;*/
+	width: 33.328%;
+	height: 200px;
+}
+footer > section span {
+	display: block;
+	margin-top: 70px;
+	text-align: center;
+}
+footer > section span a {
+	font: normal 1em bold Verdana, Geneva, sans-serif;
+	color: #999;
+}
+footer > section span a:hover {
+	color: #C30;
+}
+footer > span {
+	/*display: block;*/
+	width: 100%;
+	text-align: center;
+	color: #CCC;
+}
+/*********************************************
+----------------back to top-------------------
+*********************************************/
+.back-to-top {
+	position: fixed;
+	bottom: 8em;
+	right: 0;
+	width: 38px;
+	height: 35px;
+	overflow: hidden;
+	padding: 10px;
+	display: none;
+	background: url(../Images/BackToTopArrow.png) center 2px no-repeat;
+	z-index: 100;
+}
+.back-to-top:hover {
+	background: url(../Images/BackToTopArrow.png) center -51px no-repeat;
+}
+.back-to-top:active {
+	background: url(../Images/BackToTopArrow.png) center -104px no-repeat;
+}

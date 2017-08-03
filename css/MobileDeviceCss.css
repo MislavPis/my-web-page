@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+/*****MainCss*****/
+section#SectionPage {
+	display: block;
+}
+article section#SectionPage div {
+	width: 100%;
+	flex: 0;
+	margin-right: 0;
+	box-shadow: none;
+	padding-bottom: 20px;
+	background: url(../Images/linearGradient.png) center bottom no-repeat;
+}
+article section#SectionPage div:last-of-type {
+	background: none!important;
+}
+section#SectionPage div h2 {
+	margin: 30px 0 0 0;
+	font-size: 3em;
+}
+section#SectionPage div p {
+	height: auto;
+	font: normal 100 1.6em/1.8em "Times New Roman", Times, serif;
+}
+section#SectionPage div span {
+	width: 95%;
+	margin: 20px 0 0 0;
+}
+section#SectionPage div span a {
+	font-size: 1.5em;
+}
+#wraper article #MobileSection { 
+	position: relative;
+	background: url(../Images/MobileImageSmall.jpg) top center no-repeat;
+	height: 800px;
+	width: 100%;
+}
+section#MobileSection div {
+	position: absolute;
+	top: 330px;
+	height: auto;
+	width: 100%;
+	float: none;
+}
+section#MobileSection div h3 {
+	font: 900 3em/1.2em Georgia, "Times New Roman", Times, serif;
+}
+section#MobileSection div p {
+	font: normal 2em/1.5em Georgia, "Times New Roman", Times, serif;
+	text-align: center;
+}
+footer > section span a {
+	font: 1.45em bold Verdana, Geneva, sans-serif;
+}
+footer > span {
+	margin: 15px auto 0 auto;
+}
+
+/*****HeaderPage*****/
+
+article .ArticleHeader {
+	padding: 0 0 1.5em 0;	
+}
+.ArticleHeader > span {
+	font: 1.5em bold Verdana, Geneva, sans-serif;
+	width: 50%;
+	margin: 0 15px 20px 0;
+}
+article #navSection {
+	width: 880px;
+	top: 130px;
+	left: 80px;
+}
+article #navSection li {
+	float: left;
+	margin: 0 1em 0.6em 0;
+	border-bottom: none;	
+	font-size: 1.6em;
+}
+article #navSection li a {
+	transition: none;
+}
+article #navSection li a:hover {
+	padding-right: 0!important;
+}
+article #ArticlePageTxT {
+	width: 100%;
+	margin: 120px 0 0 0;
+}
+article #ArticlePageTxT h2 {
+	font-size: 3em;
+}
+article #ArticlePageTxT p {
+	margin: 0 15px 15px 25px;
+	font: normal 100 1.6em/1.8em "Times New Roman", Times, serif;
+}
+
+/*****ContactPage*****/
+
+input[title], textarea {
+	font: normal 100 1.5em/1.4em Tahoma, Geneva, sans-serif;
+	width: 500px;
+}
+form div label {
+	font: bold 1.6em Verdana, Geneva, sans-serif;
+}
+input[type="submit"], input[type="reset"] {
+	padding: 15px 20px;
+	font-size: 1em;
+}
